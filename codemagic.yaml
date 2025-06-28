@@ -1,12 +1,10 @@
 workflows:
-  flutter-app:
-    name: Ngatia Sales Build
+  build-apk:
+    name: Ngatia Harun APK Build
     environment:
       flutter: stable
-      xcode: latest
-      android: true
     scripts:
-      - name: Install dependencies
+      - name: Get dependencies
         script: flutter pub get
       - name: Build APK
         script: flutter build apk --release
